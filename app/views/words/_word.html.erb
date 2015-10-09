@@ -1,0 +1,7 @@
+<li>
+  <%= link_to word.content_jp, word %>
+  <% if current_user.admin? %>
+    | <%= link_to t(:delete), word, method: :delete, 
+                   			data: { confirm: t(:you_sure) } %>
+  <% end %>
+</li>

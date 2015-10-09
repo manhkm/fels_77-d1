@@ -1,0 +1,26 @@
+<% provide(:title, t(:creat_word)) %>
+<h1>Create word</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @word do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+
+      <%= label(:word, :content_jp)%>
+      <%= f.text_field :content_jp, class: 'form-control' %>
+
+      <p class="fields">
+        <%= f.fields_for :answers do |builder| %>
+          <%= label(:word, :answer) %>
+          <%= builder.text_field :content, class: 'form-control' %>
+          <%= builder.hidden_field :correct_answer, value: :true%>
+          <%= label(:word, :correct_answer, class: "checkbox inline") do %>
+            <%= builder.check_box :correct_answer %>
+            <%= label(:word, :correct_answer)%>
+      <% end %>
+        <% end %>
+      </p>
+      <%= f.submit t(:creat_word), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

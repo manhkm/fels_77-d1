@@ -1,0 +1,25 @@
+<% provide(:title, @word.content_jp) %>
+<div class="row">
+  <div class="col-md-4">
+    <section>
+      <h1>
+        Japanese mean
+      </h1>
+      <h1>
+        <%= @word.content_jp %>
+      </h1>
+    </section>
+  </div>
+  <div class="col-md-8">
+    <section>
+      <h1>
+        Vietnamese mean
+      </h1>
+      <h2>
+        <% @answers.each do |answer| %>
+          <%= answer.content if answer.correct_answer%>
+        <% end %>
+      </h2>
+    </section>
+  </div>
+</div>

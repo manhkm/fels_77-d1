@@ -1,0 +1,73 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  please_login: "Please log in."
+  invalid_combination: "Invalid email/password combination"
+  welcome: "Welcome to the E Learning system!" 
+  profile_updated: "Profile updated"
+  user_deleted: "User deleted"
+  title: "E Learning System"
+  about: "About"
+  contact: "Contact"
+  home: "Home"
+  help: "Help"
+  users: "Users"
+  profile: "Profile"
+  settings: "Settings"
+  logout: "Log out"
+  login: "Log in"
+  signup: "Sign up now!"
+  view_profile: "view my profile"
+  word_list: "Word list"
+  lesson: "Lesson"
+  delete: "Delete"
+  you_sure: "You sure?"
+  creat_acc: "Create my account"
+  signup_title: "signup"
+  all_user: "All users"
+  edit_user: "Edit user"
+  save_change: "Save changes"
+  user:
+    label:
+      name: "Name"
+      email: "Email"
+      password : "Password"
+      password_confirmation : "Confirmation"
+  session:
+    label:
+      remember_me: "Remember me on this computer"
+  following: "Following"
+  followers: "Followers"
+  follow:  "Follow"
+  unfollow: "Unfollow"
+  creat_word: "creat word"
+  create_word_success: "creat word success"
+  word:
+    label:
+      content_jp: "japanese content"
+      correct_answer: "correct answer"
+  answer: "answer"
+  word_deleted: "word deleted"
+  all_word: "All word"
+  please_contact_admin: "please contact admin"
+  remove: "Remove"

@@ -1,0 +1,13 @@
+<%= render @lessons %>
+<h1>Please check lesson</h1>
+<%= form_for '#' do |f| %>
+<%= check_box_tag(:Lesson1) %>
+<%= label_tag(:L_esson1, "Lesson1") %>
+<%= check_box_tag(:Lesson2) %>
+<%= label_tag(:L_esson2, "Lesson2") %>
+<%= check_box_tag(:Lesson3) %>
+<%= label_tag(:L_esson3, "Lesson3") %>
+<%= check_box_tag(:Lesson4) %>
+<%= label_tag(:L_esson4, "Lesson4") %> 
+<%= f.submit "Next", { class: "btn primary-btn" } %>
+<% end %>
